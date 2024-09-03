@@ -41,10 +41,18 @@ public class MyArray {
   }
 
   private void shiftItems(int index) {
-    for(int i = index; i < length - 1; i++) {
+    for (int i = index; i < length - 1; i++) {
       data.set(i, data.get(i + 1));
     }
     data.remove(length - 1);
     length--;
+  }
+
+  @Override
+  public String toString() {
+    return "MyArray{" +
+        "data = " + data +
+        ", length = " + length +
+        '}';
   }
 }
