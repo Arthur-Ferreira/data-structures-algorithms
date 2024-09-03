@@ -27,5 +27,11 @@ public class MyArray {
     return length;
   }
 
+  public Object pop() {
+    Object lastItem = data.get(length - 1);
+    data.remove(length - 1);
+    length--;
+    return lastItem;
+  }
 
 }
