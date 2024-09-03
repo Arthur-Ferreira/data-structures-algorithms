@@ -1,3 +1,5 @@
+package MyArray;
+
 /* Master the Coding Interview: Data Structures + Algorithms
 *
 *   Programa: Criando Meu Proprio Array
