@@ -34,4 +34,17 @@ public class MyArray {
     return lastItem;
   }
 
+  public Object delete(int index) {
+    Object item = data.get(index);
+    shiftItems(index);
+    return item;
+  }
+
+  private void shiftItems(int index) {
+    for(int i = index; i < length - 1; i++) {
+      data.set(i, data.get(i + 1));
+    }
+    data.remove(length - 1);
+    length--;
+  }
 }
