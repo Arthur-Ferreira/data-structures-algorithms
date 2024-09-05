@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MergeSortedArrays {
 
-  public List<Integer> mergeSortedArrays(int[] arr1, int[] arr2){
+  public static List<Integer> mergeSortedArrays(int[] arr1, int[] arr2){
     List<Integer> mergedArray = new ArrayList<>();
     int i = 0, j = 0;
 
